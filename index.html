@@ -310,7 +310,15 @@ html[data-theme="gold"]{
   letter-spacing:.02em;
   font-size:13px;
   text-transform:uppercase;
-  color: rgba(236,246,255,.92);
+  color: var(--text);
+
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
 
   /* changed: allow 2-line clamp instead of hard cut */
   white-space: normal;
